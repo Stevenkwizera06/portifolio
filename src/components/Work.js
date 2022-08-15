@@ -1,7 +1,6 @@
 import React from 'react';
 // eslint-disable-next-line no-unused-vars
-import Phantom from '../assets/phantom1.png'
-
+import phantom from '../assets/phantom-image.png'
 
 const Work = () => {
   return (
@@ -19,6 +18,7 @@ const Work = () => {
 
             {/* Grid Item */}
           <div
+          style={{ backgroundImage: `url(${phantom})` }}
             className='shadow-lg shadow-[#040c16] group container rounded-md flex justify-center items-center mx-auto content-div'
           >
             {/* Hover Effects */}
@@ -45,7 +45,7 @@ const Work = () => {
           
             {/* Grid Item */}
           <div
-            style={{ backgroundImage: `url()` }}
+          style={{ backgroundImage: `url(${phantom})` }}
             className='shadow-lg shadow-[#040c16] group container rounded-md flex justify-center items-center mx-auto content-div'
           >
             {/* Hover Effects */}
@@ -68,7 +68,7 @@ const Work = () => {
             </div>
           </div>
           <div
-            style={{ backgroundImage: `url()` }}
+          style={{ backgroundImage: `url(${phantom})` }}
             className='shadow-lg shadow-[#040c16] group container rounded-md flex justify-center items-center mx-auto content-div'
           >
             {/* Hover Effects */}

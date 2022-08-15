@@ -18,9 +18,14 @@ export default function Navbar() {
     // eslint-disable-next-line no-unused-vars
     const handleClick = () => setNav(!nav);
 
+
     return (
         <div className='fixed w-full h-[80px] flex justify-between items-center px-4 bg-[#0a192f] text-gray-300'>
-            <div>logo</div>
+            <a className='text-4xl font-serif text-blue-800'
+                href='/'>
+                Steven
+            </a>
+
 
             {/* menu */}
             <ul className='hidden md:flex'>
@@ -110,7 +115,7 @@ export default function Navbar() {
                     <li className='w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-[#6fc2b0]'>
                         <a
                             className='flex justify-between items-center w-full text-gray-300'
-                            href='/'
+                            href="mailto:kwiste06@gmail.com" target="_blank" rel="noreferrer noopener"
                         >
                             Email <HiOutlineMail size={30} />
                         </a>
@@ -118,7 +123,8 @@ export default function Navbar() {
                     <li className='w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-[#565f69]'>
                         <a
                             className='flex justify-between items-center w-full text-gray-300'
-                            href='/'
+
+                            href={Resume} target="_blank" rel="noreferrer"
                         >
                             Resume <BsFillPersonLinesFill size={30} />
                         </a>

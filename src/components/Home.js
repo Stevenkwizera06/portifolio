@@ -1,8 +1,13 @@
 /* eslint-disable react/no-unescaped-entities */
-import React from 'react';
+import React, { useState } from 'react';
 import { HiArrowNarrowRight } from 'react-icons/hi';
+import { Link } from 'react-scroll'
+
 
 const Home = () => {
+    const [nav, setNav] = useState(false);
+    // eslint-disable-next-line no-unused-vars
+    const handleClick = () => setNav(!nav);
     return (
         <div name='home' className='w-full h-screen bg-[#0a192f]'>
             {/* Container */}
@@ -22,7 +27,10 @@ const Home = () => {
                 </p>
                 <div>
                     <button className='text-white group border-2 px-6 py-3 my-2 flex items-center hover:bg-pink-600 hover:border-pink-600'>
-                        View Work
+                    <Link onClick={handleClick} to='work' smooth={true} duration={500}>
+                    View Work
+                    </Link>
+                        
                         <span className='group-hover:rotate-90 duration-300'>
                             <HiArrowNarrowRight className='ml-3 ' />
                         </span>
