@@ -6,7 +6,7 @@ import { FaBars, FaTimes, FaGithub, FaLinkedin } from 'react-icons/fa'
 import { HiOutlineMail } from 'react-icons/hi';
 import { BsFillPersonLinesFill } from 'react-icons/bs';
 // eslint-disable-next-line no-unused-vars
-import Resume from '../assets/resume/KWIZERA STEVEN (cv1).pdf'
+import Resume from '../assets/resume/KWIZERA STEVEN CV .pdf'
 // eslint-disable-next-line no-unused-vars
 import { Link } from 'react-scroll'
 
